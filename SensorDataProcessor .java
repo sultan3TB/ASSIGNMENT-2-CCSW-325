@@ -11,15 +11,13 @@ public class SensorDataProcessor {
     } 
  
     // calculates average of sensor data 
-    private double average(double[] array) { 
-        int i = 0; 
-        double val = 0; 
-        for (i = 0; i < array.length; i++) { 
-            val += array[i]; 
-        } 
- 
-        return val / array.length; 
-    } 
+    private double calculateAverage(double[] array) {
+        double sum = 0;
+        for (double num : array) {
+            sum += num;
+        }
+        return sum / array.length;
+    }
  
     // calculate data 
     public void calculate(double d) { 
