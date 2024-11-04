@@ -1,3 +1,6 @@
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+
 public class SensorDataProcessor { 
  
     // Senson data and limits. 
@@ -5,9 +8,9 @@ public class SensorDataProcessor {
     public double[][] limit; 
  
     // constructor 
-    public DataProcessor(double[][][] data, double[][] limit) { 
-        this.data = data; 
-        this.limit = limit; 
+   public SensorDataProcessor(double[][][] data, double[][] limit) {
+        this.data = data;
+        this.limit = limit;
     } 
  
     // calculates average of sensor data 
